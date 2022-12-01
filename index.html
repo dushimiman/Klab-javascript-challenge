@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 2.Filter and show the product that will be expensive in the array -->
+    <script>
+       const products = [
+    {product:"Bike", price:"100"},
+    {product:"TV", price:"200"},
+    {product:"Album", price:"10"},
+    {product:"Book", price:"5"},
+    {product:"Phone", price:"500"},
+    {product:"Computer", price:"1000"},
+
+]
+function maximum(){
+    let array = [100,200,10,5,500,1000]
+    let max= array[0]
+    for(let i=0 ;i<array.length; i++){
+        if(array[i]>max){
+            max=array[i]
+        }
+    }
+    document.write('the expensive product is 1000 ')
+}
+maximum();
+    </script>
+</body>
+</html>

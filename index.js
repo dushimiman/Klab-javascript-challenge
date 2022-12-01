@@ -9,13 +9,15 @@ const products = [
     {product:"Computer", price:"1000"},
 
 ]
-// full price of all products combined
-let sum = [100,200,10,5,500,100].reduce(function(previousValue, currentValue){
+// 3.full price of all products combined
+let sum = [100,200,10,5,500,1000].reduce(function(previousValue, currentValue){
     return previousValue + currentValue
-}, 100);
+}, );
  console.log("SUM:", sum)
 
 console.log(products)
+// 2.Filter and show the product that will be expensive in the array
+// index.html
 // for each
 products.forEach(item => {
     console.log(`the price for ${item.product} is ${item.price}`);
